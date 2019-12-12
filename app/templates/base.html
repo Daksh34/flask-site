@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta property="fb:app_id" content="570617473672020" />
+        {% if title %}
+        <title>{{ title }} - microblog</title>
+        {% else %}
+        <title>microblog</title>
+        {% endif %}
+    </head>
+    <body>
+        
+        <hr>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+        {% block content %}
+        
+        {% endblock %}
+        <!-- <div class="fb-comments" data-href="http://127.0.0.1:5000/index" data-width="" data-numposts="5"></div>
+        <div id="fb-root"></div>
+        <script  src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=570617473672020&version=v5.0"></script> -->
+    </body>
+</html>

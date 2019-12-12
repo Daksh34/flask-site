@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://salvillalon45.github.io/templates/experiences.html -->
+<html lang="en" dir="ltr" class="gr__salvillalon45_github_io"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>{{ title }} - Blog</title>
+
+    <link rel="icon" href="https://salvillalon45.github.io/static/images/salvador%20logo/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.css') }}">
+    <!-- <link href="./Salvador Villalon Projects_files/css" rel="stylesheet">
+    <link href="./Salvador Villalon Projects_files/css(1)" rel="stylesheet">
+    <link href="./Salvador Villalon Projects_files/css(2)" rel="stylesheet"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/experiences.css') }}">
+
+  </head>
+  <body data-gr-c-s-loaded="true">
+
+    <section>
+      <header>
+        <!-- fixed-top makes the navbar stick to the top of the screen as the user is scrolling -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- ml-auto makes content of navbar to the left, but not the logo -->
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/index">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/experiences">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </section>
+
+  <main>
+    <!-- *************************************
+      Jumbotron Section
+    -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container-fluid">
+        <h1>{{ user.username }}</h1>
+        <h3><em>The {{ title }}</em></h3>
+      </div>
+    </div>
+
+
+    <!-- *************************************
+      Buttons Section
+    -->
+    <div class="container text-center lk-id-btn">
+      <a class="btn btn-primary" href="#" role="button">Learn more on LinkedIn</a>
+      <a class="btn btn-primary" href="#https://salvillalon45.github.io/static/documents/resume/Villalon_Salvador_Resume.pdf" role="button">Check out my Resume</a>
+    </div>
+
+
+    <!-- *************************************
+      Education and Certificates Section
+    -->
+    <div class="Education-Certficates section">
+      <div class="container">
+        <h2>Education and Certificates</h2>
+
+        <!-- ********************************** -->
+        <!-- UCI Education -->
+        <div class="education row extra-exp">
+
+          <div class="col-md-6">
+            <p class="exp-title">University of Mumbai</p>
+            <p>Bachelor's of Information Techno;ogy</p>
+            <p>2014 - 2017</p>
+          </div>
+
+          <div class="col-md-6 pics">
+            <img style="height: 150px;" src="{{ url_for('static', filename='img/mumUni.jpg') }}">
+          </div>
+
+        </div> <!-- End of UCI Intro -->
+        <div class="education row">
+          <div class="education-description">
+            <div class="col-md-12">
+              <strong><p>Degree Coming Soon</p></strong>
+              <p><strong>Technologies Learned</strong></p><p>
+              </p><ul>
+                <li>I still have a lot to learn!</li>
+              </ul>
+              <p><strong>Relevant Coursework</strong></p><p>
+              </p><ul>
+                <li>Introduction to Data Management </li>
+                <li>Software Design: Structure and Implementation</li>
+                <li>Data Structure Implementation and Analysis </li>
+                <li>Introduction to Human Computer Interaction</li>
+                <li>Information Retrieval</li>
+                <li>Introduction to Computer Orgnization</li>
+              </ul>
+            </div>
+          </div>
+        </div>  <!-- End of UCI Experience -->
+
+      </div> <!-- End Education container -->
+    </div> <!-- End Education section -->
+
+    <hr>
+
+    <!-- *************************************
+      Work Experience Section
+    -->
+    <div class="technology section">
+      <div class="container">
+        <h2> Work Experience </h2>
+
+        <!-- ********************************** -->
+        <!-- KMI Experience -->
+        <div class="experience row extra-exp">
+
+          <div class="col-md-6">
+            <p class="exp-title">Software Developer</p>
+            <p>Krishmark Infotech &amp; Co | Mahape, Navi Mumbai</p>
+            <p>DEC 2017 - ... </p>
+            <strong><p>As a Developer I...</p></strong>
+          </div>
+
+          <div class="col-md-6 pics">
+            <img style="width: 250px; height: 100px;" src="#">
+          </div>
+
+        </div> <!-- End of KMI Intro -->
+
+        <div class="experience row">
+          <div class="experience-description">
+            <div class="col-md-12">
+              <ul>
+                <li>Built and deployed a <strong>full-stack web application</strong> with a team of interns using <strong>React, Groovy, and Spring Boot</strong> to remove a manual process for updating client customer configurations </li>
+                <li><strong>Led the design and implementation of the web application’s backend</strong> and built its communication using Rest Templates with the frontend and internal JPMC APIs</li>
+                <li>Developed a process to mount the React frontend to run inside a Spring Boot application for JPMC server environments </li>
+                <li><strong>Researched and integrated JPMC’s internal OAuth</strong> into the web application to authenticate and authorize application users</li>
+                <li>Created unit tests for all backend functionalities using <strong>Spock and Groovy</strong></li>
+              </ul>
+              <p><strong>Technologies Used</strong></p><p>
+              </p><ul>
+                <li>Spring Boot, Java, Groovy, React, JavaScript, Spock, Gradle, Maven, IntelliJ, Bitbucket, OAuth</li>
+              </ul>
+            </div>
+          </div>
+        </div> <!-- End of JPMC EXperience -->
+
+      </div> <!-- End Experience container -->
+    </div> <!-- End Experience section -->
+
+    <hr>
+    
+</main>
+
+
+
+  <!-- *************************************
+    Footer Section
+  -->
+  <footer class="footer">
+    <p>Made by {{ user.username }}</p>
+    <ul>
+      <a href="https://github.com/salvillalon45"><li>GitHub</li></a>
+      <li> | </li>
+      <a href="https://www.linkedin.com/in/salvadorvillalon/"><li>LinkedIn</li></a>
+    </ul>
+    <div class=" per-web-description">
+    <p>
+  </p></div>
+  </footer>
+
+
+  <script src="{{ url_for('static', filename='js/jquery-3.3.1.slim.min.js.download') }}"></script>
+  <script src="{{ url_for('static', filename='js/popper.min.js.download') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js.download') }}"></script>
+  
+
+</body></html>

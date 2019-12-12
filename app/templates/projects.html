@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://salvillalon45.github.io/templates/projects.html -->
+<html lang="en" dir="ltr" class="gr__salvillalon45_github_io"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>{{ title }} - Blog</title>
+
+    <link rel="icon" href="https://salvillalon45.github.io/static/images/salvador%20logo/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.css') }}">
+    <!-- <link href="./Salvador Villalon Projects_files/css" rel="stylesheet">
+    <link href="./Salvador Villalon Projects_files/css(1)" rel="stylesheet">
+    <link href="./Salvador Villalon Projects_files/css(2)" rel="stylesheet"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}">
+
+  </head>
+
+ 
+  <body data-gr-c-s-loaded="true">
+  
+    
+   
+    <section>
+      <header>
+        <!-- fixed-top makes the navbar stick to the top of the screen as the user is scrolling -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- ml-auto makes content of navbar to the left, but not the logo -->
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/index">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/experiences">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </section>
+    
+    
+    
+  <main>
+    <!-- *************************************
+      Jumbotron Section
+    -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container-fluid">
+        <h1>{{ user.username }}</h1>
+        <h3><em>The {{ title }}</em></h3>
+      </div>
+    </div>
+
+
+    <!-- *************************************
+      Recent Projects Section
+    -->
+    <div class="section">
+      <div class="container">
+        <h2>Recent Projects</h2>
+
+        <!-- ********************************** -->
+        <!-- CKYC BAF -->
+        <div class="row recent-proj">
+          <div class="col-md-6">
+            <div class="project-description">
+              <p class="project-title"><em>Comparing Images using Face Detection</em></p>
+              <p>Nov - Dec 2019</p>
+              <p>A Application where I share my thoughts and experiences on my internship at JPMorgan Chase &amp; Co at the Navi Mumbai, Mahape office. This application served as a way for me to practice React and JavaScript.</p>
+              <ul>
+                 <li><a href="#">GitHub Repository</a></li>
+                 <li> | </li>
+                 <li><a href="https://ckyc.bafindia.com">Site</a></li>
+                 <li> | </li>
+                 <li><a href="#">Wanna Have a go ?</a></li>
+              </ul>
+              <p><strong>Technologies Used:</strong> OpenCV, Tensorflow, Keras, Flask, RestAPI, JavaScript, HTML</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 pics">
+            <img src="{{ url_for('static', filename='img/q.png') }}">
+          </div>
+        </div>
+
+        <div class="row recent-proj">
+          <div class="col-md-6">
+            <div class="project-description">
+              <p class="project-title"><em>Project Name under progress...</em></p>
+              <p>August 2019</p>
+              <p>A web application that uses the Spotify API to allow users to search for music and create new playlist based on the search results. The newly created playlists will be shown on the Spotify account.</p>
+              <ul>
+                 <li><a href="#">GitHub Repository</a></li>
+                 <li> | </li>
+                 <li><a href="https://ckyc.bafindia.com">Site</a></li>
+              </ul>
+              <p><strong>Technologies Used:</strong> ASP .NET, C#, JavaScript, Bootstrap, JQuery, HTML, CSS, SQL, IIS</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 pics">
+            <img src="{{ url_for('static', filename='img/BafIndia.png') }}">
+          </div>
+        </div>
+
+        <!-- ********************************** -->
+        <!-- CKYC Reliance -->
+        <div class="row recent-proj">
+          <div class="col-md-6">
+            <div class="project-description">
+              <p class="project-title"><em>Project Name under progress...</em></p>
+              <p>August 2019</p>
+              <p>A web application that uses the Spotify API to allow users to search for music and create new playlist based on the search results. The newly created playlists will be shown on the Spotify account.</p>
+              <ul>
+                 <li><a href="#">GitHub Repository</a></li>
+                 <li> | </li>
+                 <li><a href="https://ckyc.reliancenipponlife.com">Site</a></li>
+              </ul>
+              <p><strong>Technologies Used:</strong> ASP .NET, C#, JavaScript, Bootstrap, JQuery, HTML, CSS, SQL, IIS</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 pics jamming">
+            <img src="{{ url_for('static', filename='img/RNLIC.png') }}">
+          </div>
+        </div>
+
+        
+    </div>
+  </div>
+
+  <hr>
+    <!-- *************************************
+      Buttons Section
+    -->
+    <div class="container text-center github-btn">
+      <a class="btn btn-primary" href="https://github.com/salvillalon45" role="button">Find more on GitHub</a>
+    </div>
+
+</main>
+
+
+
+  <!-- *************************************
+    Footer Section
+  -->
+  <footer class="footer">
+    <p> Made by {{ user.username }} </p>
+    <ul>
+      <a href="#"><li>GitHub</li></a>
+      <li> | </li>
+      <a href="#"><li>LinkedIn</li></a>
+      
+    </ul>
+  </footer>
+  
+  <script src="{{ url_for('static', filename='js/jquery-3.3.1.slim.min.js.download') }}"></script>
+  <script src="{{ url_for('static', filename='js/popper.min.js.download') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js.download') }}"></script>
+
+
+  
+
+</body>
+
+
+</html>
