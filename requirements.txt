@@ -27,7 +27,7 @@ defusedxml==0.5.0
 Django==2.2.7
 django-filter==2.2.0
 djangorestframework==3.10.3
-dlib==19.8.1
+#dlib==19.8.1
 docutils==0.15.2
 EasyProcess==0.2.7
 emoji==0.5.2
