@@ -32,9 +32,9 @@ docutils==0.15.2
 EasyProcess==0.2.7
 emoji==0.5.2
 entrypoints==0.3
-face==19.1.2
-face-recognition==1.2.3
-face-recognition-models==0.3.0
+# face==19.1.2
+# face-recognition==1.2.3
+# face-recognition-models==0.3.0
 Flask==1.0.2
 Flask-Bcrypt==0.7.1
 Flask-Login==0.4.1
@@ -67,10 +67,10 @@ jedi==0.13.3
 Jinja2==2.10
 jmespath==0.9.4
 jsonschema==2.6.0
-jupyter==1.0.0
-jupyter-client==5.2.4
-jupyter-console==6.0.0
-jupyter-core==4.4.0
+# jupyter==1.0.0
+# jupyter-client==5.2.4
+# jupyter-console==6.0.0
+# jupyter-core==4.4.0
 # Keras==2.2.4
 # Keras-Applications==1.0.7
 # Keras-Preprocessing==1.0.9
